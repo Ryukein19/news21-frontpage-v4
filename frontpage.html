@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Saturday Front Page — 21 November 2026</title>
+<style>
+@font-face{font-family:'Unifraktur';src:url('unifraktur.woff2') format('woff2');font-weight:400;font-style:normal}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e2d4}
+.page{width:1024px;height:1024px;background:#f8f5ee;color:#111;font-family:'Liberation Serif','DejaVu Serif',Georgia,serif;margin:0 auto;padding:10px 22px 8px;overflow:hidden;display:flex;flex-direction:column}
+.rule{border-top:2px solid #111}
+.rule-thin{border-top:1px solid #111}
+.rule-dbl{border-top:3px double #111}
+/* --- masthead --- */
+.masthead{text-align:center;padding-bottom:2px}
+.mast-top{display:flex;justify-content:space-between;font-family:Arial,Helvetica,sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#222}
+.mast-name{font-family:'Unifraktur','Liberation Serif',serif;font-size:42px;line-height:1.0;letter-spacing:1px;margin:1px 0 0}
+.mast-date{display:flex;justify-content:space-between;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;border-top:1px solid #111;border-bottom:2px solid #111;padding:3px 2px;margin-top:2px}
+/* --- hook --- */
+.hook{font-family:'Liberation Serif','DejaVu Serif',Georgia,serif;font-weight:900;font-size:44px;line-height:1.0;text-align:center;letter-spacing:0.5px;margin:5px 0 2px}
+.subhead{font-family:'Liberation Serif',Georgia,serif;font-size:15.5px;font-weight:700;text-align:center;line-height:1.15;margin-bottom:5px}
+.subhead em{font-style:italic}
+/* --- lead --- */
+.lead{display:flex;gap:14px;border-top:2px solid #111;padding-top:6px}
+.lead-map{flex:0 0 392px}
+.lead-map svg{display:block;width:392px;height:105px}
+.lead-map .cap{font-family:Arial,Helvetica,sans-serif;font-size:8.5px;line-height:1.3;color:#333;margin-top:3px;text-align:left}
+.lead-body{flex:1;font-size:12.5px;line-height:1.3;text-align:justify}
+.lead-body p{margin-bottom:6px}
+.lead-body b{font-weight:700}
+.kick{font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#8b0000}
+.badge{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:7.5px;font-weight:700;letter-spacing:0.8px;border:1px solid #111;padding:1px 4px;margin-left:4px;vertical-align:2px}
+/* --- strips --- */
+.strip{display:flex;border-top:2px solid #111;border-bottom:2px solid #111;margin-top:6px}
+.strip .cell{flex:1;text-align:center;padding:4px 2px 3px;border-left:1px solid #999}
+.strip .cell:first-child{border-left:none}
+.strip .num{font-size:20px;font-weight:900;line-height:1}
+.strip .lab{font-family:Arial,Helvetica,sans-serif;font-size:8px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;margin-top:2px;line-height:1.25}
+.utc{display:flex;justify-content:space-between;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:700;letter-spacing:0.4px;padding:3px 1px;border-bottom:1px solid #111}
+.utc b{color:#8b0000}
+/* --- grid --- */
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0 14px;margin-top:5px}
+.cell{border-top:1px solid #111;padding:4px 0 3px}
+.cell h3{font-size:14.5px;line-height:1.06;font-weight:900;margin:2px 0 3px}
+.cell p{font-size:11px;line-height:1.28;text-align:left}
+.cell .num-big{font-size:21px;font-weight:900}
+/* --- also --- */
+.also-head{font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:900;letter-spacing:2px;text-transform:uppercase;border-top:2px solid #111;border-bottom:1px solid #111;padding:3px 0;margin-top:5px}
+.also{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px 16px;margin-top:4px}
+.also .item{font-size:9.5px;line-height:1.2;padding-left:20px;text-indent:-20px}
+.also .n{font-weight:900;color:#8b0000}
+/* --- region + date check --- */
+.regions{font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:700;letter-spacing:0.6px;text-align:center;border-top:1px solid #111;border-bottom:1px solid #111;padding:4px 0;margin-top:4px}
+.dc-head{font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+.dc{font-size:10px;line-height:1.28;margin-top:1px;text-align:justify}
+.dc b{color:#8b0000}
+.footer{margin-top:auto;border-top:2px solid #111;padding-top:3px;font-family:Arial,Helvetica,sans-serif;font-size:8px;line-height:1.35;color:#333;display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+<div class="page">
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="mast-top"><span>Vol. I — No. 37</span><span>Late Edition</span><span>Price: Free</span></div>
+    <div class="mast-name">The Saturday Front Page</div>
+    <div class="mast-date"><span>Saturday, November 21, 2026</span><span>37 Stories · 9 Regions</span><span>The World in One Picture</span></div>
+  </div>
+  <!-- HOOK -->
+  <div class="hook">MISSILES RAIN ON U.S. BASES</div>
+  <div class="subhead">Iranian attack hits al-Riffa and Awali in Bahrain — home of the U.S. Fifth Fleet — <em>and two tankers are struck off Oman</em></div>
+  <!-- LEAD -->
+  <div class="lead">
+    <div class="lead-map">
+      <svg viewBox="0 0 392 105" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of the Gulf showing Bahrain and the Strait of Hormuz">
+        <rect x="0" y="0" width="392" height="105" fill="#cfe0ea"/>
+        <path d="M0,105 L0,55 L50,40 L110,45 L160,70 L175,105 Z" fill="#f2e9d4" stroke="#7a6a4d" stroke-width="1.5"/>
+        <path d="M392,0 L210,0 L240,25 L300,35 L392,30 Z" fill="#e9dfc8" stroke="#7a6a4d" stroke-width="1.5"/>
+        <path d="M392,105 L345,105 L355,82 L392,72 Z" fill="#e9dfc8" stroke="#7a6a4d" stroke-width="1.5"/>
+        <text x="35" y="82" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#5a4a2d" transform="rotate(-30 35 82)">SAUDI ARABIA</text>
+        <text x="270" y="18" font-family="Georgia,serif" font-size="12" font-weight="bold" fill="#5a4a2d">IRAN</text>
+        <text x="145" y="35" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#1f3a5f" transform="rotate(15 145 35)">PERSIAN GULF</text>
+        <text x="295" y="62" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#8b0000">STRAIT OF HORMUZ</text>
+        <path d="M185,54 L189,60 L196,60 L191,65 L193,72 L185,68 L177,72 L179,65 L174,60 L181,60 Z" fill="#d4a017"/>
+        <text x="198" y="66" font-family="Arial,sans-serif" font-size="10.5" font-weight="bold" fill="#8b0000">BAHRAIN ★</text>
+        <text x="360" y="96" font-family="Georgia,serif" font-size="10" fill="#5a4a2d">OMAN</text>
+        <circle cx="285" cy="75" r="5" fill="#8b0000"/>
+        <text x="293" y="79" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#8b0000">TANKER HIT</text>
+        <circle cx="305" cy="90" r="5" fill="#8b0000"/>
+        <text x="297" y="94" text-anchor="end" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#8b0000">TANKER HIT</text>
+      </svg>
+      <div class="cap">THE GULF, 21 NOVEMBER — Bahrain (star) and the two tankers hit off Oman.</div>
+    </div>
+    <div class="lead-body">
+      <span class="kick">Middle East · War</span><span class="badge">CONFIRMED</span>
+      <p style="margin-top:3px"><b>An Iranian missile-and-drone attack hit U.S. positions at al-Riffa and Awali.</b> Bahrain said an Iranian attack struck a civilian industrial facility, starting a fire, with no injuries; air defences intercepted several attacks, and debris caused material damage.</p>
+      <p>Iran claims it hit the radars of two U.S. Patriot systems and downed a U.S. drone near Qeshm Island — <b>unconfirmed</b>. Britain's maritime agency reported <b>2 tankers hit off Oman</b>, one in the stern about 11 nautical miles north of Khasab, the other in the engine room about 17 nautical miles east. No casualties were reported on either ship.</p>
+    </div>
+  </div>
+  <!-- NUMBER STRIP -->
+  <div class="strip">
+    <div class="cell"><div class="num">2</div><div class="lab">Tankers hit off Oman</div></div>
+    <div class="cell"><div class="num">11</div><div class="lab">Dead in Mexico raid</div></div>
+    <div class="cell"><div class="num">6.7</div><div class="lab">Peru quake, 00:09 UTC</div></div>
+    <div class="cell"><div class="num">6.8</div><div class="lab">Banda Sea quake, 09:42 UTC</div></div>
+    <div class="cell"><div class="num">82,500</div><div class="lab">March in France</div></div>
+    <div class="cell"><div class="num">~50</div><div class="lab">Missing in Java fire</div></div>
+  </div>
+  <!-- UTC STRIP -->
+  <div class="utc"><span><b>00:09</b> PERU</span><span><b>02:00</b> MEXICO</span><span><b>03:00</b> BASRA</span><span><b>06:45</b> SPARTA II</span><span><b>09:42</b> BANDA SEA</span><span><b>10:34</b> FINLAND</span><span><b>16:00</b> ICE SEATTLE</span><span><b>18:24</b> BEPICOLOMBO</span><span><b>NIGHT</b> BAHRAIN</span></div>
+  <!-- GRID: 12 drawn stories -->
+  <div class="grid">
+    <div class="cell"><span class="kick">Europe · Climate</span><span class="badge">REPORTED</span><h3>COP31 DEADLOCKED OVER FOSSIL FUELS</h3><p>Antalya talks pass the Friday deadline in overtime. <b>130+ countries</b> want fossil fuels named in the text; the draft makes no mention of them.</p></div>
+    <div class="cell"><span class="kick">Europe · Baltic</span><span class="badge">CONFIRMED</span><h3>DRONES SET RUSSIAN SHIP ABLAZE OFF FINLAND</h3><p>The RoRo <b>Sparta II</b> was struck by <b>two drones</b>; fire broke out and the <b>16-member crew</b> was evacuated. Finland says Ukraine is likely behind it.</p></div>
+    <div class="cell"><span class="kick">Americas · Security</span><span class="badge">CONFIRMED</span><h3>MEXICO CAPTURES “EL CHAPO ISIDRO” — 11 DEAD</h3><p>Raid in Guasave, Sinaloa. Fausto Isidro Meza Flores, 44, FBI most-wanted, was captured. <b>11 dead: 4 soldiers + 7 gunmen; 8 detained.</b></p></div>
+    <div class="cell"><span class="kick">Europe · War</span><span class="badge">CONFIRMED</span><h3>RUSSIAN DRONES HIT KYIV AGAIN — 2 HURT</h3><p>Two private houses caught fire in Podilskyi district; <b>2 people injured</b> (men aged 63 and 67, one hospitalised). Alert 04:44, explosion about 05:36.</p></div>
+    <div class="cell"><span class="kick">Europe · Sport</span><span class="badge">CONFIRMED</span><h3>ENGLAND BEAT ALL BLACKS 37–12</h3><p>Record win at Twickenham — England's biggest ever margin over New Zealand (previous best 38–21, 2012). Five tries; a <b>25-point margin</b>.</p></div>
+    <div class="cell"><span class="kick">Americas · Quake</span><span class="badge">OFFICIAL</span><h3>MAGNITUDE 6.7 QUAKE SHAKES CENTRAL PERU</h3><p><b>00:09 UTC</b>, Junín, about 120 km deep; felt in Lima. <b>No casualties, no significant damage</b>; no tsunami. USGS and GFZ agree on 6.7.</p></div>
+    <div class="cell"><span class="kick">Oceania · Quake</span><span class="badge">OFFICIAL</span><h3>MAGNITUDE 6.8 QUAKE IN THE BANDA SEA</h3><p><b>09:42 UTC, 143 km deep</b>, 103 km north-east of Lospalos; felt in Dili and Darwin. <b>No casualties; no tsunami.</b></p></div>
+    <div class="cell"><span class="kick">Middle East · Disaster</span><span class="badge">CONFIRMED</span><h3>BASRA POWER-STATION FIRE — AT LEAST 4 KILLED</h3><p>Fire at the Hartha power station north of Basra after a gas-pipeline explosion, about 03:00 UTC. <b>At least 4 killed, 30 injured</b>; the plant shut down.</p></div>
+    <div class="cell"><span class="kick">Europe · Trade</span><span class="badge">CONFIRMED</span><h3>EU AND INDONESIA SIGN TRADE DEAL</h3><p>After a decade of talks, Brussels removes <b>98.5% of tariffs</b> on EU goods, covering about <b>730 million people</b>.</p></div>
+    <div class="cell"><span class="kick">Global · Space</span><span class="badge">OFFICIAL</span><h3>BEPICOLOMBO ENTERS MERCURY ORBIT</h3><p><b>18:24 UTC.</b> The ESA/JAXA spacecraft enters Mercury orbit after an eight-year, 10-billion-km journey; the second mission ever to orbit Mercury.</p></div>
+    <div class="cell"><span class="kick">Europe · Arms</span><span class="badge">REPORTED</span><h3>128 NATIONS AGREE TO DRAFT KILLER-ROBOT RULES</h3><p>Geneva: <b>128 states</b> agree to keep working toward binding rules on autonomous weapons by 2028; the U.S., Russia and Israel opposed.</p></div>
+    <div class="cell"><span class="kick">Europe · Protest</span><span class="badge">OFFICIAL</span><h3>FRANCE MARCHES FOR A SIXTH SATURDAY — 82,500</h3><p>Cost-of-living marches across France. Interior Ministry: <b>82,500</b> nationwide, 21,500 in Paris; organisers: 150,000.</p></div>
+  </div>
+  <!-- ALSO 24 -->
+  <div class="also-head">Also on this day — 24 more stories</div>
+  <div class="also">
+    <div class="item"><span class="n">14</span> <b>U.S. stocks in correction after Friday's rout</b> — S&amp;P 500 −3.7%, Dow −1.9%, Nasdaq −5.3%; S&amp;P and Dow in correction.</div>
+    <div class="item"><span class="n">15</span> <b>UK and EU sign three post-Brexit agreements</b> — food exports, emissions trading, youth scheme.</div>
+    <div class="item"><span class="n">16</span> <b>Candy-factory fire near Jakarta — 3 killed, ~50 missing</b> — PT Fonusa Agung Mulia, Cikande; 15 rescued, 4 injured.</div>
+    <div class="item"><span class="n">17</span> <b>Mosquitoes cut dengue in Brazilian children by ~69%</b> — Wolbachia study; chikungunya also cut.</div>
+    <div class="item"><span class="n">18</span> <b>Mathematician claims Riemann proof — by AI</b> — Anthropic's Levent Alpöge used Claude; two groups verified it so far.</div>
+    <div class="item"><span class="n">19</span> <b>Gaza: Israeli strike kills 3 in food vehicle</b> — Gaza City's Tel al-Hawa; truck carried World Central Kitchen papers.</div>
+    <div class="item"><span class="n">20</span> <b>Trump defends Putin ties; Zelensky calls Putin a killer</b> — after the summit with Xi in Shenzhen.</div>
+    <div class="item"><span class="n">21</span> <b>Poland: Tusk says missile landings a likely provocation</b> — two Russian missiles came down overnight 19–20 Nov.</div>
+    <div class="item"><span class="n">22</span> <b>Houthis and Saudi-led coalition trade strikes</b> — coalition hit Hodeidah and Sanaa; Houthis say 71 strikes in 24 hours.</div>
+    <div class="item"><span class="n">23</span> <b>Finland: Russian helicopter violated airspace 4.1 km</b> — 12:34 local, off Loviisa, about 5 minutes; Finland notified NATO.</div>
+    <div class="item"><span class="n">24</span> <b>France seeks UNSC meeting over Myanmar rejection</b> — Myanmar rejected the ICJ ruling (Thu 19 Nov, 9–6).</div>
+    <div class="item"><span class="n">25</span> <b>FBI probes hack of its crime database</b> — National Crime Information Center; second major breach in two months.</div>
+    <div class="item"><span class="n">26</span> <b>EU proposes smaller budget with 3% Big Tech tax</b> — 2028–2034 budget; France and Germany clash over spending cuts.</div>
+    <div class="item"><span class="n">27</span> <b>Three Houthi missiles intercepted over Riyadh</b> — coalition destroyed three ballistic missiles fired toward Riyadh in the early hours; no one hurt.</div>
+    <div class="item"><span class="n">28</span> <b>Palisades fire arson conviction</b> — Jonathan Rinderknecht guilty; the fire killed 12 and destroyed 6,800+ buildings.</div>
+    <div class="item"><span class="n">29</span> <b>Bolsonaro in intensive care</b> — bowel obstruction, stable, breathing on his own; doctors weighing surgery.</div>
+    <div class="item"><span class="n">30</span> <b>Haiti: Salvadoran troops fight gangs</b> — in Port-au-Prince; three Salvadoran soldiers died in an explosives accident.</div>
+    <div class="item"><span class="n">31</span> <b>Nigeria boat capsizes — 24 killed</b> — Bayelsa State, funeral mourners; at least 24 killed, 24 rescued.</div>
+    <div class="item"><span class="n">32</span> <b>Estonia to close Russia border crossings from Dec 1</b> — three crossings shut; Denmark urged the EU to stop tourist visas for Russians.</div>
+    <div class="item"><span class="n">33</span> <b>Toxic alcohol kills at least 11 in Manipur</b> — Chandel district; 180+ hospitalised.</div>
+    <div class="item"><span class="n">34</span> <b>Chinese jets cross the Taiwan median line — 15 of 21</b> — joint combat readiness patrol; Taiwan scrambled jets and ships.</div>
+    <div class="item"><span class="n">35</span> <b>Bitcoin dives to ~$55,100, then rebounds past $60,000</b> — lowest since September 2024; recovered the same day.</div>
+    <div class="item"><span class="n">36</span> <b>CAF makes Kiswahili an official language — 54/54 back Infantino</b> — Africa's 54 nations back Gianni Infantino.</div>
+    <div class="item"><span class="n">37</span> <b>ICE arrests 2 on a Seattle jet bridge — flight delayed</b> — masked officers detained 2 as passengers boarded Alaska Airlines Flight 1306 to Los Angeles; 16:00 UTC.</div>
+  </div>
+  <!-- REGIONS -->
+  <div class="regions">STORIES BY REGION — EUROPE 13 · AMERICAS 10 · MIDDLE EAST 5 · AFRICA 2 · SOUTH ASIA 1 · EAST ASIA 2 · SOUTH-EAST ASIA 1 · OCEANIA 1 · GLOBAL 2</div>
+  <!-- DATE CHECK -->
+  <div class="dc-head">Date Check — what is NOT Saturday news</div>
+  <div class="dc"><b>Not Saturday:</b> Kyiv bridges hit (Thu–Fri 19–20 Nov) · Cyclone Akvan, India (Fri 20 Nov) · Anthropic IPO debut, +17% (Thu 19 Nov) · U.S. Senate 51–48 Iran vote (Thu 19 Nov) · ICJ Myanmar ruling (Thu 19 Nov, 9–6) · Poland missile landings (night of 19–20 Nov) — only the reactions are Saturday · <b>Kryvyi Rih triple-tap strike (Friday night 20 Nov)</b> — only the toll (2 killed, ~60 wounded) was confirmed Saturday · <b>COP31: the Sunday vote did NOT adopt the pact</b> — the EU rejected a text with no fossil-fuel mention (Sunday's outcome) · New COP31 draft (Sun 22 Nov) · Verstappen wins Las Vegas GP (Sun 22 Nov).</div>
+  <!-- FOOTER -->
+  <div class="footer"><span>Badges: CONFIRMED = 2+ outlets · OFFICIAL = on the record · REPORTED = one outlet. Sources: Reuters, AP, AFP, BBC, CNN, ESA, USGS, GFZ, UKMTO, Sky Sports.</span><span>37 stories · 9 regions · Saturday 21 November 2026</span></div>
+</div>
+</body>
+</html>
